@@ -1,0 +1,170 @@
+<html lang="en">
+  <head>
+    <!-- h1 font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <!-- h2 font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ruda:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- default font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FF7 TailwindCSS</title>
+  </head>
+  <body class="bg-primary">
+    <div class="container">
+      <div class="flex py-3">
+        <div class="w-full"></div>
+        <div>
+          <!-- header component-->
+          <h1 class="whitespace-no-wrap text-3xl md:text-6xl">
+            Final Fantasy VII
+          </h1>
+          <h2 class="text-lg md:text-3xl">©1997Square</h2>
+        </div>
+        <div class="w-full"></div>
+      </div>
+
+      <div class="py-3 card">
+        <h3 class="color-primary">Header components:</h3>
+        <span class="pt-3">h1: </span>
+        <h1>h1</h1>
+        <span class="pt-3">h2: </span>
+        <h2>h2</h2>
+      </div>
+
+      <div class="py-3 card">
+        <h3 class="color-primary">Colours:</h3>
+        <div class="py-3">
+          <div class="color-primary">.color-primary</div>
+          <div class="color-secondary">.color-secondary</div>
+          <div class="color-tertiary">.color-tertiary</div>
+        </div>
+        <div class="pb-3">
+          <div class="bg-primary color-primary">.bg-primary</div>
+          <div class="bg-secondary">.bg-secondary</div>
+          <div class="bg-tertiary">.bg-tertiary</div>
+        </div>
+      </div>
+
+      <!-- CARD COMPONENT -->
+      <!-- <div class="card"> -->
+      <section>
+        <h3 class="color-primary">Card Component:</h3>
+        <div
+          class="card max-w-sm mx-auto flex p-6 rounded-lg shadow-xl mt-2 mb-8"
+        >
+          <div class="flex-shrink-0">
+            <img src="img/logo-white.png" alt="Logo" class="h-12 w-12" />
+          </div>
+
+          <div class="ml-6 pt-1">
+            <h4 class="text-xl">FF7 TailwindCSS</h4>
+            <p class="text-base">You have a new message!</p>
+          </div>
+        </div>
+      </section>
+      <!-- </div> -->
+
+      <!-- <div class="card"> -->
+      <section>
+        <h3 class="color-primary">Anchor Component:</h3>
+        <a href="#">
+          <img src="img/cursor.png" class="cursor" alt="Cursor" />
+          Link
+        </a>
+        <!-- </div> -->
+      </section>
+
+      <!-- <div class="card"> -->
+      <section>
+        <h3 class="color-primary">Button Component:</h3>
+        <button>
+          <img src="img/cursor.png" class="cursor" alt="Cursor" />
+          Button
+        </button>
+        <!-- </div> -->
+      </section>
+
+      <!-- <div class="card"> -->
+      <section>
+        <h3 class="color-primary">Unordered Lists:</h3>
+        <ul>
+          <li>One</li>
+          <li>Two</li>
+          <li>Three</li>
+        </ul>
+
+        <h3 class="color-primary">Ordered Lists:</h3>
+        <ol>
+          <li>One</li>
+          <li>Two</li>
+          <li>Three</li>
+        </ol>
+        <!-- </div> -->
+      </section>
+
+      <!-- ALERT COMPONENT -->
+      <!-- <div
+        class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative my-5"
+        role="alert"
+      >
+        <strong class="font-bold">Alert!</strong>
+        <span class="block sm:inline">Please update your password</span>
+      </div> -->
+
+      <!-- BUTTON COMPONENT-->
+      <!-- <div class="py-3">
+        <button
+          class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded"
+        >
+          Find Friends
+        </button>
+
+        <button class="btn btn-blue">Find Groups</button>
+      </div> -->
+      <h3 class="color-primary px-3">Footer Component:</h3>
+    </div>
+    <footer class="flex">
+      <div class="card w-full">
+        <span>This is a card in the &lt;footer&gt;</span>
+        <ul>
+          <li>
+            <img src="img/cursor.png" class="cursor" alt="Cursor" />
+            <a href="#">Cloud</a>
+          </li>
+          <li>
+            <img src="img/cursor.png" class="cursor" alt="Cursor" />
+            <a href="#">Aerith</a>
+          </li>
+          <li>
+            <img src="img/cursor.png" class="cursor" alt="Cursor" />
+            <a href="#">Barret</a>
+          </li>
+          <li>
+            <img src="img/cursor.png" class="cursor" alt="Cursor" />
+            <a href="#">Kitchen Sink</a>
+          </li>
+        </ul>
+      </div>
+      <div class="card w-full">
+        <span>
+          This style was put together by David Dales - a big fan of general
+          tech, and FF7!
+        </span>
+      </div>
+    </footer>
+  </body>
+</html>
