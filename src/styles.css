@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply font-bold py-2 px-4 rounded;
+}
+
+.btn-blue {
+  @apply bg-blue-500 text-white;
+}
+
+.btn-blue:hover {
+  @apply bg-blue-400;
+}
+
+/* - The opening screen of FF7 is mostly black and smoggy, with a flash of light-turqoise
+- I.e., black, charcoal gray, turqoise, white... default card-bg is radial darkish blue to navy blue
+- Might add cards w/ blue bg, white text */
+
+/* Black text with a white outline... (opening screen text color) */
+.color-primary {
+  @apply text-white tracking-wider;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.color-secondary {
+  @apply text-gray-600;
+}
+
+.color-tertiary {
+  @apply text-blue-200;
+}
+
+.bg-card {
+  background: radial-gradient(ellipse at top left, blue, navy);
+}
