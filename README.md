@@ -1,8 +1,14 @@
+FF7 Tailwind CSS
+
+Landing page:
+  https://suspicious-goldstine-a7759a.netlify.app/
+
+
 Okay, here's the game plan!
 
 To-dos:
-  - post what I have online...
-  - do all the stuff below...
+- Make a dropdown menu
+- Built-in dark mode (?... kinda difficult to do with a default FF7 theme...)
 
 - Bootstrap and other CSS frameworks are all about giving you
   more default styling so you can quickly set up your sites.
