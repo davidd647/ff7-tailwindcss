@@ -2,27 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-.btn {
-  @apply font-bold py-2 px-4 rounded;
-}
-
-.btn-blue {
-  @apply bg-blue-500 text-white;
-}
-
-.btn-blue:hover {
-  @apply bg-blue-400;
-}
-
 /* - The opening screen of FF7 is mostly black and smoggy, with a flash of light-turqoise
 - I.e., black, charcoal gray, turqoise, white... default card-bg is radial darkish blue to navy blue
 - Might add cards w/ blue bg, white text */
 
 /* Black text with a white outline... (opening screen text color) */
+
+h1 {
+  @apply text-black tracking-tighter underline uppercase text-center;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+
+  font-family: "Playfair Display", serif;
+}
+
+h2 {
+  @apply text-black text-2xl uppercase text-right;
+  text-shadow: -3px -0px 0 #fff, 0px -3px 0 #fff, -3px 0px 0 #fff,
+    0px 3px 0 #fff;
+
+  font-family: "Ruda", sans-serif;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
 .color-primary {
-  @apply text-white tracking-wider;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
+  @apply text-white;
 }
 
 .color-secondary {
@@ -33,6 +40,107 @@
   @apply text-blue-200;
 }
 
+.bg-primary {
+  @apply bg-gray-800;
+}
+
+.bg-secondary {
+  @apply bg-blue-200;
+}
+
+.bg-tertiary {
+  @apply bg-blue-600;
+}
+
 .bg-card {
   background: radial-gradient(ellipse at top left, blue, navy);
 }
+
+.card {
+  @apply text-white rounded border-4 border-gray-400 px-2 my-2;
+
+  background: radial-gradient(ellipse at top left, blue, navy);
+}
+
+section {
+  @apply text-white rounded border-4 border-gray-400 px-2 my-2;
+
+  background: radial-gradient(ellipse at top left, blue, navy);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 30px;
+}
+
+ol {
+  @apply list-decimal;
+
+  margin: 0;
+  padding-left: 30px;
+}
+
+li {
+  position: relative;
+}
+
+li .cursor {
+  display: none;
+}
+
+li:hover .cursor {
+  display: block;
+  position: absolute;
+  right: 100%;
+  top: 0;
+}
+
+a {
+  /* all links darkened to differentiate from normal text */
+  /* darkened text is the only text colour differentiator in FF7... */
+  @apply text-gray-500;
+  position: relative;
+}
+
+a .cursor {
+  display: none;
+}
+
+a:hover .cursor {
+  display: block;
+  position: absolute;
+  right: 100%;
+  top: 0;
+}
+
+button {
+  @apply text-white rounded border-4 border-gray-400 px-2 my-2;
+
+  background: radial-gradient(ellipse at top left, blue, navy);
+
+  position: relative;
+}
+
+button .cursor {
+  position: absolute;
+  right: 100%;
+  top: 0;
+}
+button:hover .cursor {
+  right: calc(100% - 10px);
+}
+
+/* stuff from a tutorial a while ago: */
+
+/* .btn {
+  @apply font-bold py-2 px-4 rounded;
+}
+
+.btn-blue {
+  @apply bg-blue-500 text-white;
+}
+
+.btn-blue:hover {
+  @apply bg-blue-400;
+} */
