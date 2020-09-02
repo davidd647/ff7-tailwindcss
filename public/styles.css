@@ -22426,6 +22426,18 @@ button:hover .cursor {
   right: calc(100% - 10px);
 }
 
+.nav > a {
+  cursor: pointer;
+}
+
+.nav > a img {
+  max-width: 100px;
+}
+
+/* .nav a img {
+  max-width: 100px;
+} */
+
 /* stuff from a tutorial a while ago: */
 
 /* .btn {
