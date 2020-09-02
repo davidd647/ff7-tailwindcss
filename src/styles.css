@@ -6,8 +6,7 @@
 - I.e., black, charcoal gray, turqoise, white... default card-bg is radial darkish blue to navy blue
 - Might add cards w/ blue bg, white text */
 
-/* Black text with a white outline... (opening screen text color) */
-
+/* Huge, black, serifed text with a white outline... (opening screen text) */
 h1 {
   @apply text-black tracking-tighter underline uppercase text-center;
   text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
@@ -16,6 +15,7 @@ h1 {
   font-family: "Playfair Display", serif;
 }
 
+/* Bigger, black, sans-serif text with chunky white outline... (opening screen subtitle */
 h2 {
   @apply text-black text-2xl uppercase text-right;
   text-shadow: -3px -0px 0 #fff, 0px -3px 0 #fff, -3px 0px 0 #fff,
@@ -24,50 +24,64 @@ h2 {
   font-family: "Ruda", sans-serif;
 }
 
+/* Clear, sans-serif font, outlined in black - similar to in-game menus */
 body {
   font-family: "Quicksand", sans-serif;
+  text-shadow: -2px -0px 0 #000, 0px -2px 0 #000, -2px 0px 0 #000,
+    0px 2px 0 #000;
 }
 
+/* Primary text color is white */
 .color-primary {
   @apply text-white;
 }
 
+/* A common colour in the game is smoggy grey */
 .color-secondary {
   @apply text-gray-600;
 }
 
+/* Another common colour is this foggy blue */
 .color-tertiary {
   @apply text-blue-200;
 }
 
+/* Smoggy colour like that of Midgar in the game */
 .bg-primary {
   @apply bg-gray-800;
 }
 
+/* Light blue - there's a lot of blue colours in the game */
 .bg-secondary {
   @apply bg-blue-200;
 }
 
+/* Another blue similar to the background of a lot of panels in the game */
 .bg-tertiary {
   @apply bg-blue-600;
 }
 
+/* A basic backgrond component that is used throughout lots of FF7 */
 .bg-card {
   background: radial-gradient(ellipse at top left, blue, navy);
 }
 
+/* Card layout that is used throughout the majority of the game */
 .card {
   @apply text-white rounded border-4 border-gray-400 px-2 my-2;
 
   background: radial-gradient(ellipse at top left, blue, navy);
 }
 
+/* Similar to the card layout because FF7 recycles like that */
 section {
   @apply text-white rounded border-4 border-gray-400 px-2 my-2;
 
   background: radial-gradient(ellipse at top left, blue, navy);
 }
 
+/* Lists in FF7 are more often vertically oriented (like on equipment */
+/* selection screens). */
 ul {
   list-style: none;
   margin: 0;
@@ -81,47 +95,47 @@ ol {
   padding-left: 30px;
 }
 
+/* The following group of selectors allow the game pointer glove (i.e. cursor) 
+to appear on list-item hover */
 li {
   position: relative;
 }
-
 li .cursor {
   display: none;
-}
-
-li:hover .cursor {
-  display: block;
   position: absolute;
   right: 100%;
   top: 0;
 }
+li:hover .cursor {
+  display: block;
+}
 
+/* The following group of selectors allow the game pointer glove (i.e. cursor) 
+to appear on link hover */
 a {
-  /* all links darkened to differentiate from normal text */
-  /* darkened text is the only text colour differentiator in FF7... */
+  /* all links darkened to differentiate from normal text... */
+  /* I think darkened text is the only text colour differentiator in FF7... */
   @apply text-gray-500;
   position: relative;
 }
-
 a .cursor {
   display: none;
-}
-
-a:hover .cursor {
-  display: block;
   position: absolute;
   right: 100%;
   top: 0;
 }
+a:hover .cursor {
+  display: block;
+}
 
+/* The following group of selectors allow the game pointer glove (i.e. cursor)
+to move a bit to the side on hover for <button> elements */
 button {
   @apply text-white rounded border-4 border-gray-400 px-2 my-2;
 
   background: radial-gradient(ellipse at top left, blue, navy);
-
   position: relative;
 }
-
 button .cursor {
   position: absolute;
   right: 100%;
@@ -131,28 +145,7 @@ button:hover .cursor {
   right: calc(100% - 10px);
 }
 
-.nav > a {
-  cursor: pointer;
-}
-
+/* Some styling so that the menu logo isn't too huge */
 .nav > a img {
   max-width: 100px;
 }
-
-/* .nav a img {
-  max-width: 100px;
-} */
-
-/* stuff from a tutorial a while ago: */
-
-/* .btn {
-  @apply font-bold py-2 px-4 rounded;
-}
-
-.btn-blue {
-  @apply bg-blue-500 text-white;
-}
-
-.btn-blue:hover {
-  @apply bg-blue-400;
-} */
