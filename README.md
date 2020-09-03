@@ -1,24 +1,22 @@
 FF7 Tailwind CSS
 
-Landing page:
-  https://suspicious-goldstine-a7759a.netlify.app/
+What is this?
+  This is FF7 TailwindCSS - a set of components and default stylings
+  built on top of TailwindCSS.
+  Landing page:
+    https://suspicious-goldstine-a7759a.netlify.app/
 
-
-Okay, here's the game plan!
-
-To-dos:
-- Make a dropdown menu
-- Built-in dark mode (?... kinda difficult to do with a default FF7 theme...)
+How do I use it?
+  1. First, install tailwindCSS (https://tailwindcss.com/docs/installation) on your project, then 
+  2. copy the content from the src/styles.css folder into your own src/styles.css file
+  3. ???
+  4. Profit!!!
 
 - Bootstrap and other CSS frameworks are all about giving you
   more default styling so you can quickly set up your sites.
     - What if you wanted to encourage people to make sites that looked like FFVII?
 
-- ✔️ Find an old website or video game that I used to like as a kid...
-  - Geocities
-  - R-Type?
-  Nah... something with distinctive colour and style, without emphasized dynamicness...
-  - *Final Fantasy VII* 🎶😢 so 感动
+FF7 TailwindCSS contains these features and components:
 
 - Color:
   - ✔️ The opening screen of FF7 is mostly black and smoggy, with a flash of light-turqoise
@@ -73,27 +71,10 @@ To-dos:
         so it should probably be centered
       - https://youtu.be/TImnKC8v41c?t=648
 
-- Nice to have:
-  - Tables
-  - Dropdowns
-  - Sidebars
-  - Image carousels
-  - Video player
-  - Calendar
-
 - The next step:
   - Landing page
     - Has a beautiful & clearly worded home page that explains what your project is all about.
     - Has a section that documents all your components. See https://material.io/components/date-pickers
     - Has 3 different sample pages, with different layouts that use your design system
     - Links back to your project on Mintbean
-    
-
-- important note for building the website:
-  - not really sure how to deploy this stuff just yet... 
-  - since we're using tailwind css, it involves some NodeJS scripts...
-      - so is it possible to deploy using... parcel-bundler like last time?
-
-
-Source of images:
-  - https://i.pinimg.com/originals/39/d1/47/39d1470fb19b7e90b9bff6df79c9e0b8.jpg
+  
