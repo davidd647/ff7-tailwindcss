@@ -67,13 +67,8 @@ body {
 }
 
 /* Card layout that is used throughout the majority of the game */
-.card {
-  @apply text-white rounded border-4 border-gray-400 px-2 my-2;
-
-  background: radial-gradient(ellipse at top left, blue, navy);
-}
-
 /* Similar to the card layout because FF7 recycles like that */
+.card,
 section {
   @apply text-white rounded border-4 border-gray-400 px-2 my-2;
 
@@ -96,36 +91,27 @@ ol {
 }
 
 /* The following group of selectors allow the game pointer glove (i.e. cursor) 
-to appear on list-item hover */
-li {
-  position: relative;
-}
-li .cursor {
-  display: none;
-  position: absolute;
-  right: 100%;
-  top: 0;
-}
-li:hover .cursor {
-  display: block;
-}
-
-/* The following group of selectors allow the game pointer glove (i.e. cursor) 
-to appear on link hover */
+to appear on list-item and link hover */
+li,
 a {
-  /* all links darkened to differentiate from normal text... */
-  /* I think darkened text is the only text colour differentiator in FF7... */
-  @apply text-gray-500;
   position: relative;
 }
+li .cursor,
 a .cursor {
   display: none;
   position: absolute;
   right: 100%;
   top: 0;
 }
+li:hover .cursor,
 a:hover .cursor {
   display: block;
+}
+
+/* all links darkened to differentiate from normal text... */
+/* I think darkened text is the only text colour differentiator in FF7... */
+a {
+  @apply text-gray-500;
 }
 
 /* The following group of selectors allow the game pointer glove (i.e. cursor)

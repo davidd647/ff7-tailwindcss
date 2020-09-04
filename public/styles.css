@@ -22342,24 +22342,9 @@ body {
 
 /* Card layout that is used throughout the majority of the game */
 
-.card {
-  --text-opacity: 1;
-  color: #fff;
-  color: rgba(255, 255, 255, var(--text-opacity));
-  border-radius: 0.25rem;
-  border-width: 4px;
-  --border-opacity: 1;
-  border-color: #cbd5e0;
-  border-color: rgba(203, 213, 224, var(--border-opacity));
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  background: radial-gradient(ellipse at top left, blue, navy);
-}
-
 /* Similar to the card layout because FF7 recycles like that */
 
+.card,
 section {
   --text-opacity: 1;
   color: #fff;
@@ -22393,35 +22378,14 @@ ol {
 }
 
 /* The following group of selectors allow the game pointer glove (i.e. cursor) 
-to appear on list-item hover */
+to appear on list-item and link hover */
 
-li {
-  position: relative;
-}
-
-li .cursor {
-  display: none;
-  position: absolute;
-  right: 100%;
-  top: 0;
-}
-
-li:hover .cursor {
-  display: block;
-}
-
-/* The following group of selectors allow the game pointer glove (i.e. cursor) 
-to appear on link hover */
-
+li,
 a {
-  /* all links darkened to differentiate from normal text... */
-  /* I think darkened text is the only text colour differentiator in FF7... */
-  --text-opacity: 1;
-  color: #a0aec0;
-  color: rgba(160, 174, 192, var(--text-opacity));
   position: relative;
 }
 
+li .cursor,
 a .cursor {
   display: none;
   position: absolute;
@@ -22429,8 +22393,19 @@ a .cursor {
   top: 0;
 }
 
+li:hover .cursor,
 a:hover .cursor {
   display: block;
+}
+
+/* all links darkened to differentiate from normal text... */
+
+/* I think darkened text is the only text colour differentiator in FF7... */
+
+a {
+  --text-opacity: 1;
+  color: #a0aec0;
+  color: rgba(160, 174, 192, var(--text-opacity));
 }
 
 /* The following group of selectors allow the game pointer glove (i.e. cursor)
